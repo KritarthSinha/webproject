@@ -25,7 +25,7 @@ const getInfo = async(event) => {
       datahide2.classList.add('data_hide');
     } else {
         try{
-            let url = `http://api.openweathermap.org/data/2.5/weather?q=${cityVal}&units=metric&appid=c79bcd1f56ab0937e8d537b71c27d83d`;
+            let url = `https://api.openweathermap.org/data/2.5/weather?q=${cityVal}&units=metric&appid=c79bcd1f56ab0937e8d537b71c27d83d`;
             const response = await fetch(url);
             const arrData = await response.json();
     
